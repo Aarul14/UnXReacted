@@ -1,0 +1,25 @@
+{
+  "name": "unreacted",
+  "version": "0.1.23",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "bin": {
+    "unreacted": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun run build:cli && bun run build:app",
+    "build:cli": "bun build ./index.ts --outdir ./dist --target node",
+    "build:app": "bun build ./src/app.ts --outfile ./dist/bundle.js --target browser",
+    "dev": "bun --hot index.html"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}
