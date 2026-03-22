@@ -1,4 +1,4 @@
-# `unreacted` – React Reimagined from Scratch
+# `UnXReacted` – React Reimagined from Scratch
 
 This project is a hands-on exploration of how React works internally by building a minimal version of it using pure TypeScript.
 
